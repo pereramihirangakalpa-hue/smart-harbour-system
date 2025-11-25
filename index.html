@@ -105,8 +105,7 @@
         <button class="action-btn" id="btnArrival">▶ Ship Arrival Status</button>
         <div style="height:8px"></div>
 
-        <!-- NEW BUTTON -->
-        <button class="action-btn" id="btnDetectedCam">▶ Detected Camera</button>
+       
 
       </div>
 
@@ -134,11 +133,7 @@
         <button class="map-btn" id="mapLoad" style="top:86%; left:18%;">Load</button>
         <button class="map-btn" id="mapArrival" style="top:1%; left:10%;">Arrival</button>
 
-        <!-- NEW MAP BUTTON (TOP CENTER) -->
-        <button class="map-btn" id="mapDetectedCam"
-          style="top:35%; left:16%; transform:translateX(-50%);">
-          Detected Camera
-        </button>
+       
 
       </div>
     </div>
@@ -156,8 +151,7 @@
       loadCell:  "",
       arrival:   "motion.html",
 
-      /* NEW */
-      detectedCam: "came.html"
+      
     };
 
     function openIP(url, label){
@@ -178,9 +172,7 @@
     document.getElementById("btnLoadcell").onclick = () => openIP(IP.loadCell, "Load Cell");
     document.getElementById("btnArrival").onclick  = () => openIP(IP.arrival, "Arrival Status");
 
-    /* NEW BUTTON */
-    document.getElementById("btnDetectedCam").onclick = 
-      () => openIP(IP.detectedCam, "Detected Camera");
+   
 
     /* Map buttons */
     document.getElementById("mapExit").onclick     = () => openIP(IP.exitGate,"Gate");
@@ -192,11 +184,10 @@
     document.getElementById("mapLoad").onclick     = () => openIP(IP.loadCell,"Load Cell");
     document.getElementById("mapArrival").onclick  = () => openIP(IP.arrival,"Arrival");
 
-    /* NEW MAP BUTTON */
-    document.getElementById("mapDetectedCam").onclick =
-      () => openIP(IP.detectedCam, "Detected Camera");
+   
 
   </script>
 
 </body>
 </html>
+
